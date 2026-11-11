@@ -8,7 +8,7 @@ A macOS menu bar app that shows every port something is listening on, which proj
 
 `Error: listen EADDRINUSE :::3000` usually means hunting through `lsof` output for a PID. portkill keeps the number of listening ports in the menu bar. Click it and you get a list sorted by port, with dev servers at the top named after the folder they were started from (`mucha`, `groove`), and Docker containers named after the container. Click the cross next to one to stop it: processes get `SIGTERM`, and a **Force Quit** button appears if they're still running 2 seconds later. Containers get `docker stop`.
 
-<p align="center"><img src="docs/portkill.png" width="380" alt="The portkill panel in dark mode: a search field, then a Dev servers list with port 3000 owned by Python in the mucha folder, 5173 by nc in groove, 6379 by the shop-redis Docker container with a blue box icon, and 8080 by node in architecture-graph, each with a stop button, and 38 listening ports in the footer"></p>
+<p align="center"><img src="docs/hero.png" width="560" alt="The portkill panel in dark mode: a search field, then a Dev servers list with port 3000 owned by Python in the mucha folder, 5173 by nc in groove, 6379 by the shop-redis Docker container with a blue box icon, and 8080 by node in architecture-graph, each with a stop button, and 38 listening ports in the footer"></p>
 
 ## Requirements
 
